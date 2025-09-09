@@ -11,7 +11,8 @@
     <mat-card-content>
       Previsão: <strong>{{ dia.conditions | traduzirCondicao}}</strong> <br>
       Máxima: <strong>{{ dia.tempmax }} °C</strong> <br>
-      Mínima: <strong>{{ dia.tempmin }} °C</strong>
+      Mínima: <strong>{{ dia.tempmin }} °C</strong> <br>
+      Humidade: <strong>{{ dia.humidity }} %</strong>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>Detalhes</button>
