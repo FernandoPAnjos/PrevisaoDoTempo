@@ -4,12 +4,12 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       
-      <mat-card-title>{{ previsoesInput.resolvedAddress }}</mat-card-title>
-      <mat-card-subtitle>{{ dia.datetime | date:'dd/MM/yyyy' }} ({{ dia.datetime | date:'EEEE' }})</mat-card-subtitle>
+      <mat-card-title>{{ previsoesInput.resolvedAddress }} - {{ previsoesInput.timezone }}<br></mat-card-title>
+      <mat-card-subtitle><br>{{ dia.datetime | date:'dd/MM/yyyy' }} ({{ dia.datetime | date:'EEEE' }})</mat-card-subtitle>
     
     </mat-card-header>
     <mat-card-content>
-      Previsão: <strong>{{ dia.conditions | traduzirCondicao}}</strong> <br>
+     <br> Previsão: <strong>{{ dia.conditions | traduzirCondicao}}</strong> <br>
       Máxima: <strong>{{ dia.tempmax }} °C</strong> <br>
       Mínima: <strong>{{ dia.tempmin }} °C</strong> <br>
       Humidade: <strong>{{ dia.humidity }} %</strong>
