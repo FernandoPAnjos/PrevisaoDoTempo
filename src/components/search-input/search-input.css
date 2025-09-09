@@ -19,6 +19,12 @@ button{
     min-width: 18%;
 }
 
+.days-selector{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
 img{
     min-height: 15vh;
     width: 15vh;

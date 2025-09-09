@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SearchInput } from '../components/search-input/search-input';
 import { WheaterCards } from '../components/wheater-cards/wheater-cards';
+import { SelectValueBindingExample } from '../components/search-input/search-input';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SearchInput, WheaterCards],
+  imports: [ WheaterCards,  SelectValueBindingExample,  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

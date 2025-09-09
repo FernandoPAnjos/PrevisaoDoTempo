@@ -2,9 +2,23 @@
 <div class="search-input">
 
     <mat-form-field class="example-full-width">
-        <mat-label>Escolha a cidade</mat-label>
+        <mat-label>Cidade</mat-label>
         <input matInput placeholder="Ex. Ubá">
     </mat-form-field>
+
+    <mat-form-field class="days-selector">
+  <mat-label>Escolha quantos dias</mat-label>
+  <mat-select [(ngModel)]="selected">
+    <mat-option value="">Nenhum</mat-option>
+    <mat-option value="option1">1 dia(s)</mat-option>
+    <mat-option value="option2">2 dia(s)</mat-option>
+    <mat-option value="option3">3 dia(s)</mat-option>
+    <mat-option value="option4">4 dia(s)</mat-option>
+    <mat-option value="option5">5 dia(s)</mat-option>
+    <mat-option value="option6">6 dia(s)</mat-option>
+    <mat-option value="option7">7 dia(s)</mat-option>
+  </mat-select>
+</mat-form-field>
 </div>
 <div class="button-div"><button matFab extended>
         Pesquisar

@@ -1,25 +1,14 @@
+.example-card {
+  width: 100%; /* Defina aqui o seu tamanho padrão! */
+  height: auto;
+}
+
 .card-container {
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: repeat(4, 1fr); /* sempre 4 colunas */
+  grid-template-columns: repeat(4, 300px); 
+  justify-content: center;
   gap: 25px;
   padding: 25px;
-  border: 2px solid #000000;
-}
-
-.card-container mat-card:nth-last-child(-n+3) {
-  justify-self: end; /* centraliza os últimos 3 cards na linha de baixo */
-}
-
-.example-card {
-  height: auto;
-  width: 80%;
-}
-
-.weather-icon {
-    width: 80%;
-    height: 80%;
-  object-fit: contain; /* mantém proporção da imagem */
 }
 
 @media (max-width: 1024px) {
