@@ -38,7 +38,7 @@ export class App {
         },
         (erro) => {
           console.error('ERRO AO CHAMAR A API:', erro);
-          alert('Não foi possível encontrar a previsão para esta cidade. Verifique o nome e tente novamente.');
+          alert('Não foi possível encontrar a previsão para a cidade informada. Por favor, verifique o nome da cidade e tente novamente.');
         }
       );
   }
