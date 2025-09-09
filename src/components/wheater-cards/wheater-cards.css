@@ -11,11 +11,6 @@
   padding: 25px;
 }
 
-.example-card .mat-mdc-card-header-text {
-  align-items: flex-start;
-  text-align: left; /* Garante o alinhamento do texto também */
-}
-
 .example-card img[mat-card-image] {
   height: 180px;
   object-fit: contain;

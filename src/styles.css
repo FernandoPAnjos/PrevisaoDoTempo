@@ -2,3 +2,69 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.animated-background {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87CEEB, #A7D9F7);
+}
+
+.cloud {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-repeat: no-repeat; /* Elimina o problema de repetição da imagem */
+  background-size: auto;        
+  z-index: 0;
+}
+
+.cloud-layer-1 {
+  background-image: url('assets/images/cloudbackground1.png');
+  background-size: 200px; 
+  top: 15%; 
+  opacity: 0.4;
+  animation: moveClouds1 50s linear infinite;
+}
+
+
+.cloud-layer-2 {
+  background-image: url('assets/images/cloudbackground3.png'); 
+  background-size: 230px; 
+  top: 45%;
+  opacity: 0.3; 
+  animation: moveClouds2 70s linear infinite; /* Define o tempo ate completar a animação */
+  filter: brightness(0.8);
+}
+
+.cloud-layer-3 {
+  background-image: url('assets/images/cloudbackground2.png'); /* Caminho da imagem */
+  background-size: 180px; 
+  top: 80%; /* Posição inicial Y */
+  opacity: 0.2;
+  animation: moveClouds3 95s linear infinite;
+  filter: brightness(0.6);
+}
+
+
+@keyframes moveClouds1 {
+  0% { background-position: -300px 0; } /* Posição inicial */
+  100% { background-position: 100vw 0; } /* Posição final */
+}
+
+
+@keyframes moveClouds2 {
+  0% { background-position: -250px 0; }
+  100% { background-position: 100vw 0; }
+}
+
+@keyframes moveClouds3 {
+  0% { background-position: -200px 0; }
+  100% { background-position: 100vw 0; }
+}
+.search_container, .results_container {
+  position: relative;
+  z-index: 1;
+}
