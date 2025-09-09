@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SearchInput } from '../components/search-input/search-input';
-import { MatGridListModule } from '@angular/material/grid-list';
+import { WheaterCards } from '../components/wheater-cards/wheater-cards';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SearchInput, MatGridListModule],
+  imports: [SearchInput, WheaterCards],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

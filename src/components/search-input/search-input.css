@@ -1,21 +1,14 @@
-
-
 .search-input{
-    padding-bottom: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: solid 2px #e5ff00;
 }
 .example-full-width{
-    width: 85%;
-    padding-top: 10px;
+    min-width: 70%;
+    padding-top: 30px;
 }
 
 .button-div{
     width: 100%;
-    border: solid 2px #00ff00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,5 +16,12 @@
 
 button{
     margin-top: 10px;
-    width: 20%;
+    min-width: 18%;
+}
+
+img{
+    min-height: 15vh;
+    width: 15vh;
+    display: block;       
+    margin: 0 auto;
 }
