@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +15,19 @@ import { MatSelectModule } from '@angular/material/select';
   styleUrl: './search-input.css'
 })
 
-export class SelectValueBindingExample {
-  diasSelecionados = '';
+export class SearchInput {
+
+  cidade: string = '';
+  diasSelecionados: number | null = null;
+  
+  @Output() pesquisar = new EventEmitter<{cidade: string, dias: number | null}>();
+
+  constructor() { }
+
+  onPesquisarClick(): void {
+    console.log('Dados capturados:', this.cidade, this.diasSelecionados);
+
+    this.pesquisar.emit({ cidade: this.cidade, dias: this.diasSelecionados });
+  }
 }
 

@@ -1,5 +1,5 @@
 .example-card {
-  width: 100%; /* Defina aqui o seu tamanho padrão! */
+  width: 100%; 
   height: auto;
 }
 
@@ -9,6 +9,12 @@
   justify-content: center;
   gap: 25px;
   padding: 25px;
+}
+
+.example-card img[mat-card-image] {
+  height: 180px;
+  object-fit: contain;
+  background-color: #e3f2fd; 
 }
 
 @media (max-width: 1024px) {

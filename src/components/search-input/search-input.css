@@ -1,11 +1,10 @@
 .search-input{
     display: flex;
     justify-content: center;
-    overflow: hidden; /* <-- Correção! */
 }
 
 .example-full-width{
-    min-width: 70%;
+    min-width: 60%;
     padding-top: 30px;
 }
 

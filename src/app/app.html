@@ -1,13 +1,13 @@
 <main>
   <section class="search_container">
     <div class="search">
-      <app-search-input></app-search-input>
+      <app-search-input (pesquisar)="handlePesquisa($event)"></app-search-input>
     </div>
   </section>
   
-  <section class="results_container">
+  <section *ngIf="previsoes" class="results_container">
     <div class="results">
-      <app-wheater-cards></app-wheater-cards>
+      <app-wheater-cards [previsoesInput]="previsoes"></app-wheater-cards>
     </div>
   </section>
 </main>

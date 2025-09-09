@@ -1,109 +1,17 @@
 <section class="card-container">
-  <!-- Card 1 -->
-  <mat-card class="example-card" appearance="outlined">
+  <mat-card *ngFor="let dia of previsoesInput.days" class="example-card" appearance="outlined">
+    <img mat-card-image [src]="dia.conditions | weatherImage" alt="Ícone do tempo">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 1</mat-card-title>
-      <mat-card-subtitle>Estado 1</mat-card-subtitle>
+      
+      <mat-card-title>{{ previsoesInput.resolvedAddress }}</mat-card-title>
+      <mat-card-subtitle>{{ dia.datetime | date:'dd/MM/yyyy' }} ({{ dia.datetime | date:'EEEE' }})</mat-card-subtitle>
+    
     </mat-card-header>
     <mat-card-content>
-      Previsão do tempo: Ensolarado
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 2 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 2</mat-card-title>
-      <mat-card-subtitle>Estado 2</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Nublado
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 3 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 3</mat-card-title>
-      <mat-card-subtitle>Estado 3</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Chuvoso
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 4 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 4</mat-card-title>
-      <mat-card-subtitle>Estado 4</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Tempestade
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 5 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 5</mat-card-title>
-      <mat-card-subtitle>Estado 5</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Ensolarado
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 6 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 6</mat-card-title>
-      <mat-card-subtitle>Estado 6</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Neve
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Detalhes</button>
-      <button mat-button>Compartilhar</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <!-- Card 7 -->
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Cidade 7</mat-card-title>
-      <mat-card-subtitle>Estado 7</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      Previsão do tempo: Nublado
+      Previsão: <strong>{{ dia.conditions | traduzirCondicao}}</strong> <br>
+      Máxima: <strong>{{ dia.tempmax }} °C</strong> <br>
+      Mínima: <strong>{{ dia.tempmin }} °C</strong>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>Detalhes</button>
