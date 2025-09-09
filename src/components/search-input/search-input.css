@@ -1,7 +1,9 @@
 .search-input{
     display: flex;
     justify-content: center;
+    overflow: hidden; /* <-- Correção! */
 }
+
 .example-full-width{
     min-width: 70%;
     padding-top: 30px;
@@ -24,6 +26,7 @@ button{
     padding-top: 30px;
     padding-left: 30px;
 }
+
 
 img{
     min-height: 15vh;

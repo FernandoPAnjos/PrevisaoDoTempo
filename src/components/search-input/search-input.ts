@@ -16,6 +16,6 @@ import { MatSelectModule } from '@angular/material/select';
 })
 
 export class SelectValueBindingExample {
-  selected = 'option2';
+  diasSelecionados = '';
 }
 
