@@ -1,0 +1,25 @@
+main{
+  height: 100%;
+}
+
+.search_container{
+  height: 50%;
+  border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    width: 50%;
+    border: 2px solid #7e4242;
+}
+
+.results_container{
+  height: 50%;
+  border: 2px solid #00ff00;
+}
+
+.button-div{
+    border: #00ff00 solid 2px;
+}

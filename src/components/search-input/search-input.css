@@ -1,0 +1,27 @@
+
+
+.search-input{
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid 2px #e5ff00;
+}
+.example-full-width{
+    width: 85%;
+    padding-top: 10px;
+}
+
+.button-div{
+    width: 100%;
+    border: solid 2px #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 10px;
+    width: 20%;
+}
