@@ -50,18 +50,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 @keyframes moveClouds1 {
-  0% { background-position: -300px 0; } /* Posição inicial */
+  0% { background-position: -200px 0; } /* Posição inicial */
   100% { background-position: 100vw 0; } /* Posição final */
 }
 
 
 @keyframes moveClouds2 {
-  0% { background-position: -250px 0; }
+  0% { background-position: -280px 0; }
   100% { background-position: 100vw 0; }
 }
 
 @keyframes moveClouds3 {
-  0% { background-position: -200px 0; }
+  0% { background-position: -310px 0; }
   100% { background-position: 100vw 0; }
 }
 .search_container, .results_container {
