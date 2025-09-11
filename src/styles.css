@@ -5,7 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .animated-background {
   position: relative;
-  width: 99.2vw;
+  width: 100vw;
   min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(to bottom, #87CEEB, #A7D9F7);
