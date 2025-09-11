@@ -5,7 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .animated-background {
   position: relative;
-  width: 100vw;
+  width: 99.2vw;
   min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(to bottom, #87CEEB, #A7D9F7);
@@ -26,7 +26,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: 200px; 
   top: 15%; 
   opacity: 0.4;
-  animation: moveClouds1 50s linear infinite;
+  animation: moveClouds1 45s linear infinite;
 }
 
 
@@ -35,7 +35,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: 230px; 
   top: 45%;
   opacity: 0.3; 
-  animation: moveClouds2 70s linear infinite; /* Define o tempo ate completar a animação */
+  animation: moveClouds2 65s linear infinite; /* Define o tempo ate completar a animação */
   filter: brightness(0.8);
 }
 
